@@ -4,7 +4,7 @@ Membros:
 Fabio Yukio  
 Pedro Almeida  
 Ricardo Tanaka  
-Thomaz Ferraz  
+Thomas Ferraz  
 Verena Saeta  
 
 Atenção: este arquivo será atualizado ao longo do projeto.
