@@ -84,3 +84,12 @@ Figura 3: Autos de uma falência no e-Saj
 ![Figura 3](assets/fig3.png)
 
 Note que apenas este processo tem mais de 68 mil páginas em PDF. A página que está aberta é de uma decisão judicial. Todos esses PDFs foram baixados e esses arquivos estão em um link público do Dropbox.
+
+### Acompanhamento 
+
+Como o volume de dados é bastante grande, sendo inviável de ser baixado para se trabalhar localmente, nesta primeira etapa de tratamento dos dados, utilizaremos o Google Colaboratory para criar códigos que extraiam e leiam os arquivos diretamente na nuvem, sem necessidade de _download_. Dessa forma, esses códigos gerados estarão disponíveis através do Google Drive, mas especificamente, na pasta "Códigos Colab", podendo ser acessado [aqui](faltalink).
+
+Para checar as autorias, basta clicar em "A última edição foi em xx de xxxxx", na barra superior, como na figura 4. 
+
+![Figura 4](assets/fig4.png)
+
