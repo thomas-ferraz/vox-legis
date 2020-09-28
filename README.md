@@ -1,7 +1,6 @@
 # MAC6967-G6-NLP-juridico
 
-Members:  
-Fabio Yukio  
+Members:   
 Pedro Almeida  
 Ricardo Tanaka  
 Thomas Ferraz  
@@ -75,7 +74,7 @@ The previous figure refers to a 2015 lawsuit. The legal proceedings from 2013 on
 
 ![Figure 2](assets/fig2.png)
 
-Ao clicar neste link, uma nova janela se abre, com todas as páginas dos autos do processo em formato PDF.
+When you click on this link, a new window opens, with all pages of the case file in PDF format.
 
 Figure 3: Filings of a bankruptcy lawsuit in e-Saj
 ![Figure 3](assets/fig3.png)
