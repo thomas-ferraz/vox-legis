@@ -30,8 +30,8 @@ The main proposal of this project is to create an algorithm capable of extractin
 5. ~~If the document was attached by a lawyer, identify which party is represented by this lawyer~~;
 6. ~~Identify which of the documents are judicial sentences~~;
 7. Identify which document(s) each decision quotes;
-8. Identify (where possible) what is being decided;
-9. Identify who is being affected by the judgment;
+8. Identify (where possible) what has been decided;
+9. Identify who has been affected by the judgment;
 10. Define for each party of the lawsuit, whether each decision is favorable, unfavorable or neutral [-1, +1].
 
 ### Inputs  
