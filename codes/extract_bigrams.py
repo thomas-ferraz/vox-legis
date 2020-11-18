@@ -28,3 +28,7 @@ def main():
     df_bgms.to_csv('', index=False)
 
     text_nltk.concordance('art.')
+
+
+if __name__ == '__main__':
+    main()
