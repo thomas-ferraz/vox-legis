@@ -80,3 +80,18 @@ Figure 3: Filings of a bankruptcy lawsuit in e-Saj
 ![Figure 3](assets/fig3.png)
 
 Note that this process alone has more than 68 thousand pages in PDF. The page that is open is a judicial decision. All of these PDFs have been downloaded and they are on a public Dropbox link.
+
+## Future Developments
+
+The results obtained so far by the project are only the initial stage of a major objective: extracting the maximum amount of information and value from lawsuits, focusing mainly on the sentiment involved in each sentence. 
+
+The fundamental mission is based on the detection of possible biases or influences in the Brazilian judicial system that may cause judgments in disagreement with the law and civil rights. After all, these misjudgments tend to affect mainly individuals with little knowledge about their own rights, often in a situation of social vulnerability and, consequently, with few opportunities for defense. In addition, the technical rigor of the legal language makes it hard to understand sentences clearly, also making it difficult for people outside the area of ​​law to understand what was decided without the help of an expert.
+
+That said, we decided to focus on detecting some social problems that can also be reflected in the judicial system. That is, we want to verify if the type of decision of each of the analyzed judges is affected / altered by possible biases of behavior that are prejudiced or are in disagreement with social well-being, such as:
+
+1. Gender bias (judge tends to change his/her decision pattern according to the gender of those involved in the process);
+2. Race bias (judge tends to change his/her decision pattern according to the race of those involved in the process);
+3. More rigid / malleable judges according to the type of process (behaviour analysis);
+4. Changes in the decision pattern of judges over time (effect of experience on decisions).
+
+These are just a few of the many types of analysis that can be made from legal data, which can enable the use of technologies to monitor and modernize the judicial system, making it closer to society. Therefore, the use of data science tools in this field can contribute to an increasingly fair and coherent system, expanding the sense of justice and equality in the most diverse social strata.
