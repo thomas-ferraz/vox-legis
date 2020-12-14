@@ -1,13 +1,19 @@
 # MAC6967-G6-NLP-juridico
 
 Members:   
+Marcelo de Souza  
 Pedro Almeida  
 Ricardo Tanaka  
 Thomas Ferraz  
 Verena Saeta  
 
-Stay tuned: this file has been updated throughout the project.
+## Introduction
 
+The project has been developed during the second semester of 2020 as Vox Legis, in the course MAC0434/MAC6967 offered by IME-USP, prof. Fabio Kon, under supervision by prof. Rafael Ferreira - FEA-USP.
+
+Development was made with Jupyter Notebooks, which are in the ``/codes`` directory, with a README presenting further information. The Notebooks are can be run inside the Google Collaboratory platform, with data in Google Drive; or in a local machine, provided data is local.
+
+Due to privacy concerns, the dataset is not provided, and a request to prof. Rafael Ferreira is needed to obtain it.
 ## Abstract
 
 The main proposal of this project is to create an algorithm capable of extracting information from the records of a lawsuit in order to obtain knowledge and outcomes such as:
@@ -95,3 +101,5 @@ That said, we decided to focus on detecting some social problems that can also b
 4. Changes in the decision pattern of judges over time (effect of experience on decisions).
 
 These are just a few of the many types of analysis that can be made from legal data, which can enable the use of technologies to monitor and modernize the judicial system, making it closer to society. Therefore, the use of data science tools in this field can contribute to an increasingly fair and coherent system, expanding the sense of justice and equality in the most diverse social strata.
+
+
