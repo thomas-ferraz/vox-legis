@@ -1,19 +1,23 @@
 # MAC6967-G6-NLP-juridico
 
 Members:   
-Marcelo de Souza  
-Pedro Almeida  
-Ricardo Tanaka  
-Thomas Ferraz  
-Verena Saeta  
+- Marcelo de Souza (marcelo.mcs@ime.usp.br)
+- Pedro Almeida  (pedro.hba@usp.br)
+- Ricardo Tanaka (raktanaka@gmail.com)
+- Thomas Ferraz (thomas.ferraz@usp.br)  
+- Verena Saeta (verenacsaeta@usp.br)
+
+Supervisor 
+- Rafael Ferreira (rafaelferreira@usp.br)
 
 ## Introduction
 
 The project has been developed during the second semester of 2020 as Vox Legis, in the course MAC0434/MAC6967 offered by IME-USP, prof. Fabio Kon, under supervision by prof. Rafael Ferreira - FEA-USP.
 
-Development was made with Jupyter Notebooks, which are in the ``/codes`` directory, with a README presenting further information. The Notebooks are can be run inside the Google Collaboratory platform, with data in Google Drive; or in a local machine, provided data is local.
+Development was made with Jupyter Notebooks, which are in the [``/codes``](https://gitlab.com/thomas-ferraz/MAC6967-G6-NLP-juridico/-/tree/master/codes) directory, with a README presenting further information. The Notebooks are can be run inside the Google Collaboratory platform, with data in Google Drive; or in a local machine, provided data is local.
 
 Due to privacy concerns, the dataset is not provided, and a request to prof. Rafael Ferreira is needed to obtain it.
+
 ## Abstract
 
 The main proposal of this project is to create an algorithm capable of extracting information from the records of a lawsuit in order to obtain knowledge and outcomes such as:
@@ -27,37 +31,31 @@ The main proposal of this project is to create an algorithm capable of extractin
 - Analysis of the existence of variance in decisions as a measure of legal uncertainty;
 - Locate biases and preference that have consequences on the real world.
 
-### Steps
+## Accomplished 
 
-1. ~~Get samples of lawsuit records~~;
-2. ~~Extract administrative data from these procedures~~;
-3. ~~Download the PDFs of the files of these procedures~~;
-4. ~~Identify who attached each document to the procedure file~~;
-5. ~~If the document was attached by a lawyer, identify which party is represented by this lawyer~~;
-6. ~~Identify which of the documents are judicial sentences~~;
-7. Identify which document(s) each decision quotes;
-8. Identify (where possible) what has been decided;
-9. Identify who has been affected by the judgment;
-10. Define for each party of the lawsuit, whether each decision is favorable, unfavorable or neutral [-1, +1].
+1. Get samples of lawsuit records;
+2. Extract administrative data from these procedures;
+    - [extract_rds](https://gitlab.com/thomas-ferraz/MAC6967-G6-NLP-juridico/-/blob/master/codes/extract_rds.ipynb)
+    - [extract_html](https://gitlab.com/thomas-ferraz/MAC6967-G6-NLP-juridico/-/blob/master/codes/extract_html.ipynb)
+3. Download the PDFs of the files of these procedures;
+4. Extract strings from the PDF;
+    - [extract_unzip](https://gitlab.com/thomas-ferraz/MAC6967-G6-NLP-juridico/-/blob/master/codes/extract_unzip.ipynb)
+    - [extract_pdf](https://gitlab.com/thomas-ferraz/MAC6967-G6-NLP-juridico/-/blob/master/codes/extract_pdf.ipynb)
+5. Identify who attached each document to the procedure file;
+    - [extract_pdf](https://gitlab.com/thomas-ferraz/MAC6967-G6-NLP-juridico/-/blob/master/codes/extract_pdf.ipynb)
+5. If the document was attached by a lawyer, identify which party is represented by this lawyer;
+    - [extract_html](https://gitlab.com/thomas-ferraz/MAC6967-G6-NLP-juridico/-/blob/master/codes/extract_html.ipynb)
+6. Identify which of the documents are judicial sentences;
+    - [extract_pdf](https://gitlab.com/thomas-ferraz/MAC6967-G6-NLP-juridico/-/blob/master/codes/extract_pdf.ipynb)
+7. Classify decision into positive or negative according to the applicant (who started the legal action).
+    - [classify_decision](https://gitlab.com/thomas-ferraz/MAC6967-G6-NLP-juridico/-/blob/master/codes/classify_decisions.ipynb)
 
-### Inputs  
-- Structured data on the process, extracted from the São Paulo State Court of Justice (TJSP) system:
-  1. Name of the judge;
-  2. Names of the lawyers;
-  3. Names of the parties to the proceedings;
-  4. (...)
-  
-- PDFs of the case files:
-  1. Petitions;
-  2. Judicial decisions;
-  3. (...)
-  
-### Outputs
-- For each judicial decision in each case:
-  1. Identify which parties the judgment refers to;
-  2. Identify whether the decision is favorable or unfavorable to each of these parties;
-  3. Identify the articles and laws that are cited in the decision;
-  4. Identify the subject of the decision.
+## Unsuccessful
+
+- Cluster documents; 
+    - [cluster_pdfs](https://gitlab.com/thomas-ferraz/MAC6967-G6-NLP-juridico/-/blob/master/codes/clusters_pdfs.ipynb)
+- Use bigrams to generate labels.
+    - [extract_bigrams](https://gitlab.com/thomas-ferraz/MAC6967-G6-NLP-juridico/-/blob/master/codes/extract_bigrams.py)
 
 ## Data
 
@@ -87,6 +85,21 @@ Figure 3: Filings of a bankruptcy lawsuit in e-Saj
 
 Note that this process alone has more than 68 thousand pages in PDF. The page that is open is a judicial decision. All of these PDFs have been downloaded and they are on a public Dropbox link.
 
+### Inputs  
+- Structured data on the process, extracted from the São Paulo State Court of Justice (TJSP) system:
+  1. Name of the judge;
+  2. Names of the lawyers;
+  3. Names of the parties to the proceedings;
+  4. (...)
+  
+- PDFs of the case files:
+  1. Petitions;
+  2. Judicial decisions;
+  3. (...)
+  
+### Outputs
+- For each document written by judger, classify it as positive or negative according to the applicant (the part that started the legal action). 
+
 ## Future Developments
 
 The results obtained so far by the project are only the initial stage of a major objective: extracting the maximum amount of information and value from lawsuits, focusing mainly on the sentiment involved in each sentence. 
@@ -102,4 +115,4 @@ That said, we decided to focus on detecting some social problems that can also b
 
 These are just a few of the many types of analysis that can be made from legal data, which can enable the use of technologies to monitor and modernize the judicial system, making it closer to society. Therefore, the use of data science tools in this field can contribute to an increasingly fair and coherent system, expanding the sense of justice and equality in the most diverse social strata.
 
-
+#

@@ -90,8 +90,7 @@ The notebook requires:
 
 - clusters_pdf.ipynb
 - descriptive_statistics.ipynb
-- decriptive_stats.ipynb
-
+- extract_bigrams.py
 
 Provides some analysis needed to expand knowledge of the data.
 
@@ -103,6 +102,8 @@ The notebook requires:
 
 The notebook requires:
 
-# Annotation
+# Annotation & Modeling
 
-# Modeling
+- classify_decisions.ipynb 
+
+The requirements were previously presented. 
