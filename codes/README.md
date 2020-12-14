@@ -8,9 +8,11 @@ The Jupyter Notebooks presented are responsible for:
 - Annotation;
 - Modeling.
 
+This document provides a overview of each notebook, allowing a user to check where it needs to execute the code to obtain the data or information needed.
+
 ## Dataset
 
-The data is provided in 2 datasets (dataset1 and dataset2) with "falências" and "recuperações judiciais" processes. Data extraction was made in both, but further work focussed only in the "falências" processes.
+The data is provided in 2 datasets (dataset1 and dataset2) with "falências" and "recuperações judiciais" procedures. Data extraction was made in both, but further work focussed only in the "falências" data.
 
 # Utils 
 
@@ -21,6 +23,12 @@ For this project, it may be useful to commit to Git from Google Colab. In order 
 # Data Extraction
 
 This step extracts text data from the files provided and stores it in .csv files in multiple stages, allowing simpler processing of data and portability. Each step creates a csv that may be needed for other code, so there is an order to the extraction.
+
+# Utils
+
+Using Google Collab/Drive with GitLab as a development tools requires the repo to be in Google Drive and commands to be run from Google Colab. A notebook provides a tutorial setting up the environment:
+
+- commit_from_google_colab.ipynb
 
 ## dataset1
 
@@ -75,41 +83,73 @@ Loads each pdf file for each process, extracting relevant information and writin
 | n_processo_ | tipo_documento | string | data_doc | assinado_por | n_folha_inicio | n_folha_fim |
 | ----------- | -------------- | ------ | -------- | ------------ | -------------- | ----------- |
 
+At this point, work focussed in the data provided in ``dados_pdf_falencias.csv``, and experiments and advancements were made based on it.
+
 # Pre-processing
 
 - classify_decisions.ipynb
 
-Provides data cleansing.
+Provides data cleansing and further reduction of the dataset. The notebook is also responsible for annotation and modeling, explained further in this document.
 
 ## classify_decisions
 
 The notebook requires:
-- nltk
+- NLTK
 - Pandas
 - Numpy
 - Seaborn
 - Matplotlib
 - Gensim
-- SciKitLearn
+- scikit-learn
 
+Loads the file ``dados_pdf_falencias.csv``, standardizes document types, extracts signatures and its dates, reduces the data to contain only documents written by a judge.
 # Data Analysis
 
 - clusters_pdf.ipynb
 - descriptive_statistics.ipynb
 - extract_bigrams.py
 
-Provides some analysis needed to expand knowledge of the data.
+Provides some analysis needed to expand knowledge of the data, and the exploratory data analysis required during the course. Those are mostly graphs and images, with some exploration of tools such as clustering and embeddings of the data.
+
+## clusters_pdf
+
+The notebook requires:
+- Pandas
+- Numpy
+- Seaborn
+- Matplotlib
+- NLTK
+- top2vec
+- hdbscan
+- Joblib
+- scikit-learn
+- umap
+- SciPy
+- dbmap
+- Gensim
 
 ## descriptive_statistics
 
 The notebook requires:
+- Pandas
+- Numpy
+- Seaborn
+- Matplotlib
+- WordCloud
+- NLTK
+- spaCy
 
-## decriptive_stats
+## extract_bigrams
 
 The notebook requires:
-
+- Pandas
+- Numpy
+- NLTK
 # Annotation & Modeling
 
 - classify_decisions.ipynb 
 
-The requirements were previously presented. 
+The requirements were previously presented.
+
+With ``dados_pdf_falencias.csv`` as input, the notebook proceeds with cleansing and reduction, as mentioned, and removes control characters and stopwords. A fraction of the reduced dataset is labelled using REGEX and all of it is embedded with Doc2Vec, enabling a neural network to classify and train the data, providing a model for evaluation.
+

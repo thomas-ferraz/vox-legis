@@ -115,4 +115,8 @@ That said, we decided to focus on detecting some social problems that can also b
 
 These are just a few of the many types of analysis that can be made from legal data, which can enable the use of technologies to monitor and modernize the judicial system, making it closer to society. Therefore, the use of data science tools in this field can contribute to an increasingly fair and coherent system, expanding the sense of justice and equality in the most diverse social strata.
 
+### Note about licensing
+
+The project is licensed under the 3-clause BSD license, but for some clustering experiments [dbmap](https://pypi.org/project/dbmap/) is used, which has a GPL-v3 license.
+
 #
