@@ -12,6 +12,12 @@ The Jupyter Notebooks presented are responsible for:
 
 The data is provided in 2 datasets (dataset1 and dataset2) with "falências" and "recuperações judiciais" processes. Data extraction was made in both, but further work focussed only in the "falências" processes.
 
+# Utils 
+
+For this project, it may be useful to commit to Git from Google Colab. In order to do so, we've done a tutorial: 
+
+- commit_from_google_colab.ipynb
+
 # Data Extraction
 
 This step extracts text data from the files provided and stores it in .csv files in multiple stages, allowing simpler processing of data and portability. Each step creates a csv that may be needed for other code, so there is an order to the extraction.
