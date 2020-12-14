@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 The Jupyter Notebooks presented are responsible for:
 - Data extraction;
@@ -10,19 +10,19 @@ The Jupyter Notebooks presented are responsible for:
 
 This document provides an overview of each notebook, allowing a user to check where it needs to execute the code to obtain the data or information needed. Each notebook is self-explaining. 
 
-## Dataset
+# Dataset
 
 The data is provided in 2 datasets (dataset1 and dataset2) with "falências" and "recuperações judiciais" procedures. Data extraction was made in both, but further work focused only on the "falências" data.
 
-# Data Extraction
-
-This step extracts text data from the files provided and stores it in .csv files in multiple stages, allowing simpler processing of data and portability. Each step creates a CSV that may be needed for other code, so there is an order to the extraction.
-
-## Utils
+# Utils
 
 Using Google Collab/Drive with GitLab as development tools require the repo to be in Google Drive and the commands to be run from Google Colab. A notebook provides a tutorial setting up the environment:
 
 - commit_from_google_colab.ipynb
+
+# Data Extraction
+
+This step extracts text data from the files provided and stores it in .csv files in multiple stages, allowing simpler processing of data and portability. Each step creates a CSV that may be needed for other code, so there is an order to the extraction.
 
 ## dataset1
 
