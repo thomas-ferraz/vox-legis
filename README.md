@@ -1,4 +1,4 @@
-# MAC6967-G6-NLP-juridico
+# Vox Legis
 
 Members:   
 - Marcelo de Souza (marcelo.mcs@ime.usp.br)
