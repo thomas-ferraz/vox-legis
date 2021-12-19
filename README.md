@@ -1,5 +1,7 @@
 # Vox Legis
 
+Thank you for visiting! &nbsp; ![](https://visitor-badge.glitch.me/badge?page_id=thomas-ferraz.vox-legis)
+
 Members:   
 - Marcelo de Souza (marcelo.mcs@ime.usp.br)
 - Pedro Almeida  (pedro.hba@usp.br)
