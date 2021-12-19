@@ -3,14 +3,14 @@
 Thank you for visiting! &nbsp; ![](https://visitor-badge.glitch.me/badge?page_id=thomas-ferraz.vox-legis)
 
 Members:   
-- Marcelo de Souza (marcelo.mcs@ime.usp.br)
-- Pedro Almeida  (pedro.hba@usp.br)
-- Ricardo Tanaka (raktanaka@gmail.com)
-- Thomas Ferraz (thomas.ferraz@usp.br)  
-- Verena Saeta (verenacsaeta@usp.br)
+- Marcelo de Souza (marcelo [dot] mcs [at] ime[dot] usp [dot] br)
+- Pedro Almeida  (pedro [dot] hba [at] usp [dot] br)
+- Ricardo Tanaka (raktanaka [at] gmail [dot] com)
+- Thomas Ferraz (thomas [dot] ferraz [at] usp [dot] br)  
+- Verena Saeta (verenacsaeta [at] usp [dot] br)
 
 Supervisor 
-- Rafael Ferreira (rafaelferreira@usp.br)
+- Rafael Ferreira (rafaelferreira [at] usp [dot] br)
 
 ## Introduction
 
